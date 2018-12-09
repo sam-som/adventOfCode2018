@@ -24,6 +24,6 @@ class Day1Puzzle
     end
 end
 
-#create Day1Puzzle object
+# create Day1Puzzle object
 # Day1Puzzle.new.frequencyFinder
 # Day1Puzzle.new.repeatFinder()
