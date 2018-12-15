@@ -55,6 +55,7 @@ class Day2Puzzle
             for candidate_id in current_id+1..ids.length-1
                 if(isOffByOne(ids[current_id], ids[candidate_id]))
                     puts ids[current_id] + ids[candidate_id]
+                    return
                 end
             end
         end
@@ -64,4 +65,4 @@ end
 #Part 1
 puts Benchmark.measure {Day2Puzzle.new.checksum}
 #Part 2
-Day2Puzzle.new.findOffByOneBoxes()
+puts Benchmark.measure {Day2Puzzle.new.findOffByOneBoxes()}
